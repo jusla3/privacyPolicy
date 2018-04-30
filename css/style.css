@@ -50,7 +50,7 @@ header {
   margin-top: -5px;
 }
 
-#popUp .close {
+#popUp .close .submitB {
   color: #464646;
   right: 8px;
   top: 0px;
