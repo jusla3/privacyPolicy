@@ -12,12 +12,11 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/style.css">
       <link type="text/css" href="css/survey.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/result-light.css">
   <script src="js/jquery.min.js"></script>
  <script src="js/script0.js"></script>
- <script src="js/script00.js"></script>
+ <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 
-  <h1 >
+  <h1 id= h1>
      What don't you like in the Product?
   </h1>
 
@@ -33,25 +32,30 @@
     <h2>I'm a notification popup that isn't too distracting or in your face. Scroll down or close me and I will go away. You'll still be able to open me later on don't worry.</h2>
     <form>
       <div>
-        <input type="checkbox" id="privacyPolicy" name="policy" value="newsletter" onclick="if(this.checked){myFunction3()}">
+        <input type="checkbox" id="privacyPolicy" name="policy" value="newsletter" onclick="myFunction3()">
         <label  for="privacyPolicy">Please tick the box to agree to the terms and conditions?</label>
       </div>
-      <div>
-        <button id="submitB"  type="submit" style="display:none">Agreed</button>
+      <div id="notification-dropdown">
+        <button id="button" type="submit" style="display:none" >Agreed</button>
 
         <script>
         function myFunction3() {
             var checkBox = document.getElementById("privacyPolicy");
-            var text = document.getElementById("submitB");
+            var text = document.getElementById("button");
+            var text2 = document.getElementById("h1");
             if (checkBox.checked == true)
                 text.style.display = "block";
-          else {(checkBox.checked == false)
+          else
                text.style.display = "none";
-        }
+
+
 
         }
+
 
         </script>
+
+
       </div>
     </form>
   </div>
@@ -67,11 +71,9 @@
 
 
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-  <script src="js/index.js"></script>
   <script type="text/javascript" src="js/jquery-3.1.1.js.download"></script>
   <script type="text/javascript" src="js/survey-jquery@0.12.10"></script>
-  <script type="text/javascript" src="js/showdown.min.js.download"></script>
+  <script type="text/javascript" src="js/showdown.min.js.download.js"></script>
 
 
 
