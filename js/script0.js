@@ -22,7 +22,7 @@ var t = 0;
 
 
 
-n myFunction2() {
+function myFunction2() {
 var $pop = $('#popUp'),
  checkBox = document.getElementById("checkBoxesInput"),
   v = document.getElementById("button").value,
