@@ -1,30 +1,17 @@
-var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {},
- $checkboxes = $("#checkBoxesInput :checkbox");
-
-$checkboxes.on("change", function(){
-  $checkboxes.each(function(){
-    checkboxValues[this.id] = this.checked;
-  });
-
-  localStorage.setItem("checkboxValues", JSON.stringify(checkboxValues));
-});
-
-// On page load
-$.each(checkboxValues, function(key, value) {
-  $("#" + key).prop('checked', value);
-
-});
 
 //==================================================
 var t = 0;
 
+var $pop = $('#popUp');
 
+$('#Text22').click(function(){
+  var errr = $(this);
+  console.log("Which Button ",errr);
 
+    if ($(this).attr('data-once')!='already_clicked' ){
+        //your code here
 
-
-function myFunction2() {
-var $pop = $('#popUp'),
- checkBox = document.getElementById("checkBoxesInput"),
+var  checkBox = document.getElementById("checkBoxesInput"),
   v = document.getElementById("button").value,
  el = document.getElementById("button");
 var x = t;
@@ -47,30 +34,21 @@ else {
      console.log("2nd Hide");
      console.log("3: X = ",x);
      $pop.hide();
+
+
    }
  });
-
-/*
-if (x != "") {
-console.log("done");
-}*/
-
-//}
-
-
-
-
 
 
 $("#popUp").css("margin-left", "0px");
     $("#plus").css("margin-left", "-625px");
 
 
-  $("#close").click(function() {
-    $("#popUp").css("margin-left", "-625px");
-    $("#plus").css("margin-left", "0px");
+    $("#close").click(function() {
+      $("#popUp").css("margin-left", "-625px");
+      $("#plus").css("margin-left", "0px");
 
-  });
+    });
 
 
 	$(document).ready(function() {
@@ -89,9 +67,20 @@ $("#popUp").css("margin-left", "0px");
     });
 
 
+    }
+    else ;
+});
+$("#close").click(function() {
+  $("#popUp").css("margin-left", "-625px");
+  $("#plus").css("margin-left", "0px");
+
+});
+function myFunction6() {
+
+      $pop = $('#popUp');
+      $pop.show();
+
 };
-
-
 function myFunction4() {
 
     $("#popUp").css("margin-left", "-625px");
