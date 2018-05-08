@@ -4,7 +4,7 @@ var t = 0;
 
 var $pop = $('#popUp');
 
-$('#Text22').click(function(){
+$('#C4').click(function(){
   var errr = $(this);
   console.log("Which Button ",errr);
 
